@@ -36,6 +36,7 @@ Git的使用
     
 撤销修改：
 
+    git checkout -- .               //取消工作区的所有修改
     git checkout -- readme.txt      //把readme.txt文件在工作区的修改全部撤销，文件回到修改之前的状态。
     git reset HEAD readme.txt       // 可以把暂存区的修改撤销掉（unstage），重新放回工作区,文件回到未add状态    
     git reset --hard HEAD^          //版本回退

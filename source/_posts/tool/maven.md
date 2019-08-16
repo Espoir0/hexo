@@ -49,6 +49,6 @@ maven中，确定一个jar包需要根据坐标来确定,maven会根据坐标去
 原因是因为Intellij IEDA默认情况下不会自动编译，需要对IDEA进行自动编译的设置，如下配置自动编译
 Compiler  ->Build project automatically 选上即可
 然后 Ctrl+Shift+Alt+/，选择Registry ->compiler.automake.allow.when.app.running 选上即可
-
+maven项目不显示依赖的时候注意看pom.xml文件是否是maven项目，项目是否添加为了maven项目 
 
 

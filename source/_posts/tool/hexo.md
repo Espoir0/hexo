@@ -236,8 +236,32 @@ DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己�
   
     excerpt_description: true #是否自动摘录主页中的描述作为前导文本。
 
+#### 文章置顶
 
+用以下命令安装。
 
+    $ npm uninstall hexo-generator-index --save
+    $ npm install hexo-generator-index-pin-top --save
+
+然后在需要置顶的文章的Front-matter中加上top: true即可。
+
+    ---
+    title: hexo+GitHub博客搭建实战
+    date: 2019-00-00 12:00:00
+    categories: haha
+    top: true
+    ---
+
+设置置顶标志
+打开：/blog/themes/next/layout/_macro 目录下的post.swig文件，定位到<div class="post-meta">标签下，插入如下代码：
+```html
+{% if post.top %}
+<i class="fa fa-thumb-tack"></i>
+<font color=7D26CD>Top</font>
+<span class="post-meta-divider">|</span>
+{% endif %}
+
+```
 [主题链接一](https://blog.csdn.net/nightmare_dimple/article/details/86661502)
 #### 来必应评论
 ```
