@@ -37,7 +37,7 @@ sudo yum update 将本地yum包更新到最新
 2.安装需要的软件包 yum-util提供yum-config-manager功能，另外两个是devicemapper的驱动依赖
  `sudo yum install -y yum-utils device-mapper-persistent-data lvm2`
 3.设置yum源为阿里云
-`sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+`sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo`
 
 安装docker
 `sudo yum install docker-ce`
@@ -132,7 +132,8 @@ vi /etc/docker/daemon.json
     docker cp html mynginx:/usr/share/nginx/        //将改文件夹复制到nginx下
     
 ##### xshell使用:
-    输入ip:xxxxx  确定，第一次连接输入服务器的账号和密码，
+    输入ip:xxxxx  确定，第一次连接输入服务器的账号和密码
+    yum   -y  install  lrzsz      //安装rz
     rz 上传文件
     
     

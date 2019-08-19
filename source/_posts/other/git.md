@@ -89,6 +89,8 @@ Git的使用
     git pull origin master --rebase       
     git rebase continue
     
+    忽略指定文件，在.gitignore中添加即可
+    
 ##### 配置ssh
     
     git的连接方式分为两种一种是https连接，一种是ssh连接
