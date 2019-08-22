@@ -2,7 +2,7 @@
 title: OpenCV
 date: 2019-08-01
 tags:
-- OpenCV
+- 图像识别
 categories: 
 - 图像识别
 ---
@@ -53,12 +53,12 @@ hello3.4.7
 mat:Mat [ 5*10*CV_8UC1, isCont=true, isSubmat=false, nativeObj=0x12105a0, dataAddr=0x1213d80 ]
 ```
 ***
-#### 启动
-jdk12 ，然后将yys设置为启动classpath
+#### 常见报错
+1.jdk12 ，然后将yys设置为启动classpath
 ![mark](http://simon.bzk.ink/blog/20190816/G2niSm9t0Qb5.png?imageslim)
-Objects.isNull报错的时候。将language level设置到8以上
+2.Objects.isNull报错的时候。将language level设置到8以上
 ![mark](http://simon.bzk.ink/blog/20190816/sVuvMKDLt0P4.png?imageslim)
-报错是图片路径不对
+3.报错是图片路径不对
 ```java
 Exception in thread "main" CvException [org.opencv.core.CvException: cv::Exception: OpenCV(3.4.7)
  C:\build\3_4_winpack-bindings-win64-vc14-static\opencv\modules\imgproc\src\templmatch.cpp:1104: 
@@ -66,10 +66,10 @@ error: (-215:Assertion failed) (depth == CV_8U || depth == CV_32F) && type == _t
 in function 'cv::matchTemplate'
 ]
 ```
-配置文件无法导入的时候，查看是否将该类的working directory设置为module，不应该是project
+4.配置文件无法导入的时候，查看是否将该类的working directory设置为module，不应该是project
 ![mark](http://simon.bzk.ink/blog/20190817/J7GSgJtSENp1.png?imageslim)
 
-模块之间无法项目引用，在modules ->dependencies->添加需要引入的模块
+5.模块之间无法项目引用，在modules ->dependencies->添加需要引入的模块
 #### opencv
 OpenCV的英文全称是Open Source Computer Vision Library。它是一个开源的计算机视觉库，它由一系列 C 函数和少量 C++ 类构成，实现了图像处理和计算机视觉方面的很多通用算法
 Mat 类是存储和操作 OpenCV 中图像的主要数据结构

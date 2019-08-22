@@ -2,7 +2,7 @@
 title: Stack
 date: 2019-08-06
 tags:
-- stack
+- 算法与数据结构
 categories:
 - 算法与数据结构
 ---

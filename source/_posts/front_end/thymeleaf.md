@@ -2,9 +2,9 @@
 title: Thymeleaf
 date: 2019-08-02
 tags:
-- Thymeleaf
+- front-end
 categories:
-- Thymeleaf
+- front-end
 ---
 Thymeleaf
 <!-- more -->

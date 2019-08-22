@@ -2,9 +2,9 @@
 title: docker的使用
 date: 2019-08-02
 tags:
-- docker
+- tool
 categories:
-- docker
+- tool
 ---
 docker使用
 <!-- more -->

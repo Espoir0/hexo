@@ -6,18 +6,14 @@ tags:
 categories:
 - Blog
 ---
- 用Hexo搭建你的专属博客
- 1.下载安装及环境配置
- 2.部署到github
- 3.绑定域名
- 4.部署到coding
+***
 <!-- more -->
 [Hexo官方文档](https://hexo.io/zh-cn/docs/)
 [博客](https://blog.enjoytoshare.club/article/hexo-do-optimization.html)
 [csdn](https://blog.csdn.net/sinat_37781304/article/details/82729029)
 [教程二](https://blog.csdn.net/BLSPers/article/details/82986039)
 [教程一](https://blog.csdn.net/wugenqiang/article/details/88372848)
-
+[hexo自动安装脚本](https://hexoscript.github.io/)
 ### 安装软件
 1.在官网分别安装`git` 和 `node.js`，安装完成之后,分别用下面命查看对应版本：显示版本则表示安装成功
 [git官网](http://git-scm.com/)，安装git一路next
@@ -42,7 +38,6 @@ categories:
 4.验证是否安装成功
 
     hexo -v
-
 ### 开始配置
 1.创建文件夹 `myblog`(文件名任意),打开该文件夹然后鼠标右键进入gitbash环境
 
@@ -55,8 +50,6 @@ categories:
 
 3.
     `crtl+c`   //停止
-
-
 ### 部署
 1.github新建仓库，仓库名格式如下：
  
@@ -92,8 +85,6 @@ categories:
 
 
 4.执行成功后,输入自己的github链接 `http://Espoir0.github.io`   访问出现hexo界面说明成功
-
-
 ### 修改主配置文件：
 在config.yml文件中，找到Site，然后设置对应的信息
 
@@ -119,7 +110,6 @@ categories:
 4.配置主题可以在，theme文件夹中的 config.yml文件配置
 
 DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己的站点上接入了此功能
-
 ### 注册域名
 1.阿里注册域名  
 
@@ -163,8 +153,7 @@ DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己�
 注册coding,新建任意项目,在查看代码中初始化仓库
 设置->代码托管->部署公钥
 创建page
-复制ssh链接到 _config.yml中
-
+复制ssh链接到 _config.yml中  
 ### hexo主题设置
 #### next主题设置，在根目录下执行下面代码
     
@@ -203,7 +192,7 @@ DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己�
     #scheme: Pisces #双栏 Scheme，小家碧玉似的清新
     scheme: Gemini  #双子座，也是双栏形式，和Pisces类似
 
-#### social设置
+#### social设置 链接
     social:
       GitHub: https://github.com/Espoir0 || github
       ZhiHu: https://www.zhihu.com/people/bao-zhuang-ke/activities || ioxhost
@@ -231,11 +220,9 @@ DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己�
       enable: true #是否启动侧边栏
       number: true  #自动将列表编号添加到toc。
       wrap: false #true时是当标题宽度很长时，自动换到下一行
-
 #### excerpt_description: 
   
     excerpt_description: true #是否自动摘录主页中的描述作为前导文本。
-
 #### 文章置顶
 
 用以下命令安装。
@@ -284,6 +271,12 @@ DaoVoice 可以提供在线联系的功能，我们可以借助于此在自己�
 </div>
 <!-- end -->
 ```
+### 常见报错
+
+    1.hexo d 部署时:ERROR Deployer not found: git
+    
+    安装:npm install -save hexo-deployer-git 
+
 
 
 

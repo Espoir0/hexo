@@ -2,9 +2,9 @@
 title: Markdown
 date: 2019-07-26
 tags:
-- markdown
+- tool
 categories:
-- Tool
+- tool
 ---
 
 markdown的使用攻略

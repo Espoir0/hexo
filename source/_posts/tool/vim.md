@@ -2,9 +2,9 @@
 title: vim
 date: 2019-8-10
 tags: 
-- vim
+- tool
 categories:
-- vim
+- tool
 ---
 ***
 <!-- more -->
@@ -37,6 +37,8 @@ normal模式下：
     dd      //剪切当前行内容
     p        //粘贴
     yy       //复制当前行
+    nyy      //复制多行
+    p        //粘贴
     y1y | y2y |y3y      等//表示复制 n 行，y3y复制3行
     d2d      //删除两行
     

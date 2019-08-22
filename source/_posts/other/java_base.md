@@ -25,3 +25,15 @@ Java中定义了3类8种基本数据类型
 布尔型－boolean  一个bit
 2. 引用数据类型（reference data type）
 引用数据类型的大小统一为4个字节，记录的是其引用对象的地址
+#### IO
+/**
+java.io.File 类是文件和目录/文件夹路径名的抽象表示，用于文件和目录的创建、查找和删除,获取，遍历文件夹
+      
+      //获取当前项目路径
+      File file = new File("");
+      File absoluteFile = file.getAbsoluteFile();
+      String canonicalPath = file.getCanonicalPath();
+      
+      static String pathSeparator   win ;  linux :     //路径分割符
+      static String separator    win \    linux  /     //分隔符
+                  

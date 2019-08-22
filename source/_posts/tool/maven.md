@@ -2,9 +2,9 @@
 title: maven
 date: 2019-08-04
 tags: 
-- maven
+- tool
 categories:
-- 工具
+- tool
 ---
 1. maven简介
 2. maven使用
@@ -33,7 +33,6 @@ maven中，确定一个jar包需要根据坐标来确定,maven会根据坐标去
 #### maven创建项目使用 archetype
 在确认项目信息界面添加一组键值对
 添加`archetypeCatalog` `internal`可解决项目创建速度慢的问题
-
 #### Maven项目热部署
 我们在开发中反复修改类、页面等资源，每次修改后都是需要重新启动才生效，这样每次启动都很麻烦，浪费了大量的时间，我们可以在修改代码后不重启就能生效，在 pom.xml 中添加如下配置就可以实现这样的功能，我们称之为热部署。
 
@@ -50,7 +49,20 @@ maven中，确定一个jar包需要根据坐标来确定,maven会根据坐标去
 Compiler  ->Build project automatically 选上即可
 然后 Ctrl+Shift+Alt+/，选择Registry ->compiler.automake.allow.when.app.running 选上即可
 maven项目不显示依赖的时候注意看pom.xml文件是否是maven项目，项目是否添加为了maven项目
+#### maven配置环境变量
 
-maven配置环境变量和jdk一样 
-
+    新建系统变量，key:MAVEN_HOME value:maven的安装目录
+    在系统变量的path中添加，%MAVEN_HOME%\bin
+    mvn -v 出现版本说明配置ok 
+#### maven ,settings.xml配置阿里云下载源
+    
+    1.使用gitbash打开 `vi settings.xml`    
+    2.命令模式下搜索 mirror找到设置的地方，删除原来的，然后将这些粘贴
+     p 命令即可
+    	<mirror>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+    	</mirror>
 

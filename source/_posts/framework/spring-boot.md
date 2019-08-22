@@ -2,34 +2,30 @@
 title: spring boot入门
 date: 2019-07-26
 tags:
-- spring-boot
+- framework
 categories:
 - framework
 ---
-1. SpringBoot介绍
-2. Spring入门使用
-3. SpringBoot整合Spring Data JPA
-4. 统一异常处理
-5. 异常国际化
+***
 <!-- more -->
-    约定优于配置的思想
+#### SpringBoot简介
 
-    spring-boot简化了第三方包的引用，通过提供的starter，简化了依赖包的配置
+    1.约定优于配置的思想
+    2.spring-boot简化了第三方包的引用，通过提供的starter，简化了依赖包的配置
+    3.内嵌tomcat、jetty等web容器，不需要部署war文件。
+    4.SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用Spring的方式
 
-    内嵌tomcat、jetty等web容器，不需要部署war文件。
+    SpringBoot核心:    
+        1.起步依赖
+            起步依赖本质上是一个Maven项目对象模型（Project Object Model，POM），定义了对其他库的传递依赖    
+        2.自动配置
+            Spring Boot的自动配置是一个运行时（更准确地说，是应用程序启动时）的过程，
+            才决定Spring配置应该用哪个，不该用哪个。该过程是Spring自动完成的。
 
-    SpringBoot不是对Spring功能上的增强，而是提供了一种快速使用Spring的方式
+#### SpringBoot快速入门
+[springboot创建](https://start.spring.io/)
 
-SpringBoot核心:
 
-    起步依赖
-    起步依赖本质上是一个Maven项目对象模型（Project Object Model，POM），定义了对其他库的传递依赖
-
-    自动配置
-    Spring Boot的自动配置是一个运行时（更准确地说，是应用程序启动时）的过程，
-    才决定Spring配置应该用哪个，不该用哪个。该过程是Spring自动完成的。
-
-### SpringBoot快速入门
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

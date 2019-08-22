@@ -2,9 +2,9 @@
 title: Git
 date: 2019-08-01
 tags:
-- Git
+- tool
 categories:
-- Tool
+- tool
 ---
 Git的使用
 <!-- more -->
@@ -40,6 +40,8 @@ Git的使用
     git checkout -- readme.txt      //把readme.txt文件在工作区的修改全部撤销，文件回到修改之前的状态。
     git reset HEAD readme.txt       // 可以把暂存区的修改撤销掉（unstage），重新放回工作区,文件回到未add状态    
     git reset --hard HEAD^          //版本回退
+    git stash                       //将本地所有未add的修改暂时储存，适用在远程库更新后，本地库也更新在但没有提交而发生的冲突
+    git stash pop                   //释放储存
     
 删除文件：
 

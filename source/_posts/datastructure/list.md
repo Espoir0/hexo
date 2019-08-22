@@ -2,7 +2,7 @@
 title: 链表
 date: 2019-08-06
 tags:
-- 链表
+- 算法与数据结构
 categories:
 - 算法与数据结构
 ---
