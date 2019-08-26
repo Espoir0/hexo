@@ -19,7 +19,7 @@ settings->搜索templates->选择code and file templates->就可以创建文件�
 ##### 1.IDEA导出项目结构树
 
     tree /f src  //包括文件
-    tree >> src  //只有目录
+    tree src    //只有目录
 
 ##### 2.IDEA插件下载
 [IDEA插件官网](https://plugins.jetbrains.com/idea_ce)
@@ -73,6 +73,7 @@ settings->搜索templates->选择code and file templates->就可以创建文件�
     ctrl+shift +f10    // 运行程序
     双击shift		   //全局查找文件、类
     ctrl +f            //在文件内查找内容
+    ctrl + r           //查找并替换
     Ctrl+/或Ctrl+Shift+/	//注释（//或者/**/）
     
     alt + insert  	        // 快速创建   generate constructor ,getter or setter method。。。。。。

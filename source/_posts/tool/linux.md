@@ -178,3 +178,10 @@ vi/vim 共分为三种模式
 该命令是查看当前所有已经使用的端口情况
 `netstat   -nultp`
 `netstat  -anp  |grep  3306`   //查看端口
+#### linux
+计算机由硬件组成，为了控制这些硬件就有了操作系统，OS也会提供计算机运行所需要的功能，（网络功能），提供系统的调用接口
+linux open source
+
+linux指Linux内核，内核就是仅仅能驱动所有硬件，硬件也都是有内核来控制，每种操作系统都有自己的内核
+麦金塔电脑（Macintosh，简称Mac，香港俗称Mac机，大陆亦有人称作苹果机或麦金塔电脑），是苹果电脑其中一系列的个人电脑。Macintosh是由Macintosh计划发起人Jeff Raskin（杰夫·拉斯金）根据他最爱的苹果品种Mcintosh命名，但为了避免与音频设备制造商麦金托什实验室（McIntosh Laboratory)的名字有冲突，他故意改变了字母的拼写
+EOF (End Of File)文件结束
